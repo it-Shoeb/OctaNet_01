@@ -5,36 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
   </head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
   <body>
-    <img src="../menu.svg" alt="">
     <header>
       <div class="navbar">
         <div class="logo-container">
-            <!-- <img src="" alt="" class="logo" /> -->
-            <p>LOGO</p>
+          <img src="./assets/logo.png" width="100px" alt="" class="logo" />
         </div>
 
-        <div class="navbar-right">
-          <ul class="nav-links">
-            <li><a href="#home" class="link" id="link">Home</a></li>
-            <li><a href="#featues" class="link" id="link">Featues</a></li>
-            <li><a href="#products" class="link" id="link">Products</a></li>
-            <li><a href="#about" class="link" id="link">About</a></li>
-            <li><a href="#contact" class="link" id="link">Contact</a></li>
-          </ul>
+        <ul class="nav-links">
+          <li><a href="#home" class="link" id="link">Home</a></li>
+          <li><a href="#featues" class="link" id="link">Featues</a></li>
+          <li><a href="#products" class="link" id="link">Products</a></li>
+          <li><a href="#about" class="link" id="link">About</a></li>
+          <li><a href="#contact" class="link" id="link">Contact</a></li>
+        </ul>
 
-          <div class="navbar-searchContainer">
-            <input type="text" placeholder="Looking Something......" />
-            <img src="./assets/Search1.png" alt="" />
-          </div>
+        <div class="navbar-searchContainer">
+          <input type="text" placeholder="Looking Something......" />
+          <img src="./assets/Search1.png" alt="" />
         </div>
       </div>
     </header>
-    <section class="home" id="home">Home</section>
-    <section class="featues" id="featues">Featues</section>
-    <section class="products" id="products">Products</section>
-    <section class="about" id="about">About</section>
-    <section class="contact" id="contact">Contact</section>
+
+    <main class="hero">
+      <div class="hero-lhs">
+        <p class="hero-heading">Melodies that help you stay focus</p>
+        <p class="hero-subHeading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+          necessitatibus cupiditate! Ducimus, autem deleniti possimus aperiam
+          sit fuga quidem eveniet necessitatibus doloremque obcaecati, illo
+          quia? Minus corporis dolores reiciendis fuga?
+        </p>
+        <div class="form-container">
+          <p>Your Email Address</p>
+          <div class="input-container">
+            <input type="text" class="input" value="sample@sample.com" />
+            <input type="submit" value="Get Started" class="form-cta" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="features-container">
+      <div class="features">
+        <p class="subHeading featuresMelody">Features Melody</p>
+        <div class="features-lhs">
+          <div class="feature">
+            <img src="./assets/Artist-Designed Album Covers 2.webp" width="180px" />
+            <p class="feature-name name">Momment of silence</p>
+            <p class="feature-info info">Samantha William</p>
+          </div>
+          <div class="feature">
+            <img src="./assets/c7cc16d775e5ff62871684da879b43c5.jpeg" width="180px" />
+            <p class="feature-name name">Momment of silence</p>
+            <p class="feature-info info">Samantha William</p>
+          </div>
+          <div class="feature">
+            <img src="./assets/retro-background-futuristic-landscape-1980s-style-digital-retro-landscape-cyber-surface-retro-music-album-cover-template-sun-space-mountains_1029476-163392.jpg" width="180px" />
+            <p class="feature-name name">Momment of silence</p>
+            <p class="feature-info info">Samantha William</p>
+          </div>
+          <div class="feature">
+            <img src="./assets/TheNewAbnormal.webp" width="180px" />
+            <p class="feature-name name">Momment of silence</p>
+            <p class="feature-info info">Samantha William</p>
+          </div>
+        </div>
+      </div>
+      <div class="populars">
+        <p class="subHeading weeklypopular">Weekly Popular</p>
+        <div class="popular-lhs">
+          <div class="popular">
+            <div class="count">1</div>
+            <div class="popular-content">
+              <p class="popular-name name">Hatmony in our life</p>
+              <p class="popular-info info">1,985,098 Played</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
